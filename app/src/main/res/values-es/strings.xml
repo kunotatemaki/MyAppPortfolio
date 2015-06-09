@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mi portafolio de Apps</string>
+
+    <string name="action_settings">Ajustes</string>
+    <string name="portfolio_textview">¡Mis Aplicaciones!</string>
+    <string name="spotify_button">REPRODUCTOR SPOTIFY</string>
+    <string name="scores_button">MARCADORES APP</string>
+    <string name="library_button">LIBRERÍA APP</string>
+    <string name="build_it_button">HAZLO A LO GRANDE</string>
+    <string name="reader_button">LECTOR XYZ</string>
+    <string name="capstone_button">EPÍLOGO: MI PROPIA APLICACIÓN</string>
+    <string name="will_launch">Este botón lanzará:</string>
+    <string name="comming_soon">Ajustes próximamente</string>
+</resources>

@@ -5,7 +5,7 @@ import android.content.Context;
 import android.widget.Toast;
 
 /**
- * Created by Raúl Feliz on 2014.
+ * Created by Raúl Feliz on 2014 for the Udacity Nanodegree.
  */
 public class MyAppPortfolioTools {
     static private Toast toast = null;

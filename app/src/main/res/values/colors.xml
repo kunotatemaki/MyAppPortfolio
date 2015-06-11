@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="principal">#ed1b24</color>
-    <color name="color_primary_dark">#b71c1c</color>
-    <color name="color_accent">#0091ea</color>
-    <color name="white">#ffffff</color>
-    <color name="common_app_btn_pressed_state_color">#ff6f00</color>
-    <color name="common_app_btn_focused_state_color">#ff6f00</color>
-    <color name="common_app_btn_normal_state_color">#ffc107</color>
-    <color name="common_app_btn_text_color">#000</color>
-    <color name="capstone_app_btn_pressed_state_color">#880e4f</color>
-    <color name="capstone_app_btn_focused_state_color">#880e4f</color>
-    <color name="capstone_app_btn_normal_state_color">#e91e63</color>
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="accent">#FF4081</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="common_app_btn_pressed_state_color">#FFAB00</color>
+    <color name="common_app_btn_focused_state_color">#FFAB00</color>
+    <color name="common_app_btn_normal_state_color">#FFC107</color>
+    <color name="common_app_btn_text_color">@color/primary_text</color>
+    <color name="capstone_app_btn_pressed_state_color">#C51162</color>
+    <color name="capstone_app_btn_focused_state_color">#C51162</color>
+    <color name="capstone_app_btn_normal_state_color">#FF4081</color>
     <color name="capstone_app_btn_text_color">#fff</color>
 
 </resources>

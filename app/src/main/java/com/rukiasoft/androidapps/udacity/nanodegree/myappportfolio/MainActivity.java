@@ -12,7 +12,7 @@ import com.rukiasoft.androidapps.udacity.nanodegree.myappportfolio.tools.MyAppPo
 
 
 public class MainActivity extends AppCompatActivity {
-    Activity activity;
+    private Activity activity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -3,12 +3,11 @@ package com.rukiasoft.androidapps.udacity.nanodegree.myappportfolio;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
-import com.rukiasoft.androidapps.udacity.nanodegree.myappportfolio.tools.MyAppPortfolioTools;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -19,42 +18,50 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         activity = this;
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.appbar);
+        if(null != toolbar) {
+            setSupportActionBar(toolbar);
+            if(getSupportActionBar() != null)
+                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         findViewById(R.id.spotify_button);
         Button spotifyButton = (Button) findViewById(R.id.spotify_button);
         final String launch = getResources().getString(R.string.will_launch) + " ";
         spotifyButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                MyAppPortfolioTools.showToast(activity, launch.concat(getResources().getString(R.string.spotify_button)));
+                Utilities.showToast(activity, launch.concat(getResources().getString(R.string.spotify_button)));
             }
         });
         Button scoresButton = (Button) findViewById(R.id.scores_button);
         scoresButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                MyAppPortfolioTools.showToast(activity, launch.concat(getResources().getString(R.string.scores_button)));
+                Utilities.showToast(activity, launch.concat(getResources().getString(R.string.scores_button)));
             }
         });
         Button libraryButton = (Button) findViewById(R.id.library_button);
         libraryButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                MyAppPortfolioTools.showToast(activity, launch.concat(getResources().getString(R.string.library_button)));
+                Utilities.showToast(activity, launch.concat(getResources().getString(R.string.library_button)));
             }
         });
         Button buildItButton = (Button) findViewById(R.id.build_it_button);
         buildItButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                MyAppPortfolioTools.showToast(activity, launch.concat(getResources().getString(R.string.build_it_button)));
+                Utilities.showToast(activity, launch.concat(getResources().getString(R.string.build_it_button)));
             }
         });
         Button readerButton = (Button) findViewById(R.id.reader_button);
         readerButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                MyAppPortfolioTools.showToast(activity, launch.concat(getResources().getString(R.string.reader_button)));
+                Utilities.showToast(activity, launch.concat(getResources().getString(R.string.reader_button)));
             }
         });
         Button capstoneButton = (Button) findViewById(R.id.capstone_button);
         capstoneButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                MyAppPortfolioTools.showToast(activity, launch.concat(getResources().getString(R.string.capstone_button)));
+                Utilities.showToast(activity, launch.concat(getResources().getString(R.string.capstone_button)));
             }
         });
     }
@@ -74,11 +81,16 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            MyAppPortfolioTools.showToast(activity, getResources().getString(R.string.comming_soon));
-            return true;
+        switch(id){
+            case R.id.action_settings:
+                Utilities.showToast(activity, getResources().getString(R.string.comming_soon));
+                return true;
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
 
-        return super.onOptionsItemSelected(item);
     }
 }

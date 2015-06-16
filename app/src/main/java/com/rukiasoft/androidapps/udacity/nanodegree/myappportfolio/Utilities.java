@@ -1,4 +1,4 @@
-package com.rukiasoft.androidapps.udacity.nanodegree.myappportfolio.tools;
+package com.rukiasoft.androidapps.udacity.nanodegree.myappportfolio;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.widget.Toast;
 /**
  * Created by Raúl Feliz on 2014 for the Udacity Nanodegree.
  */
-public class MyAppPortfolioTools {
+public class Utilities {
     static private Toast toast = null;
 
     public static void showToast(final Context context, final String text) {

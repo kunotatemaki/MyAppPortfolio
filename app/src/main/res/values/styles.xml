@@ -1,13 +1,21 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
     </style>
+    <style name="CommonButton" parent="android:Widget.Button">
+        <item name="android:background">@drawable/common_app_btn</item>
+        <item name="android:textColor">@color/common_app_btn_text_color</item>
+    </style>
+    <style name="CapstoneButton"  parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/capstone_app_btn</item>
+        <item name="android:textColor">@color/capstone_app_btn_text_color</item>
 
+    </style>
 
 
 </resources>

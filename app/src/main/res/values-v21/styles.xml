@@ -3,9 +3,11 @@
     <!-- Styling the buttons. -->
     <style name="CapstoneButton" parent="android:Widget.Material.Button">
         <item name="android:colorButtonNormal">@color/capstone_app_btn_normal_state_color</item>
+        <item name="android:textColor">@color/capstone_app_btn_text_color</item>
     </style>
     <style name="CommonButton" parent="android:Widget.Material.Button">
         <item name="android:colorButtonNormal">@color/common_app_btn_normal_state_color</item>
+        <item name="android:textColor">@color/common_app_btn_text_color</item>
     </style>
 
 
